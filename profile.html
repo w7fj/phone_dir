@@ -3,97 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Bootstrap CSS -->
+    <title>Profile - PhoneBook</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand text-primary" href="index.html">Phone Directory</a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profile.html">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="add-contact.html">Add Contact</a>
-                    </li>
-                </ul>
-
-                <div class="d-flex ms-auto">
-                    <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
-                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+    <!-- Header -->
+    <header class="bg-primary text-white shadow">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-white text-decoration-none">
+                    <i class="fas fa-address-book fa-2x me-2"></i>
+                    <h1 class="mb-0 fw-bold" style="font-family: 'Montserrat', sans-serif;">PhoneBook</h1>
+                </a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="profile.html" class="nav-link text-white fw-semibold">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link text-white fw-semibold">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="add_contact.html" class="nav-link text-white fw-semibold">Add Contact</a>
+                        </li>
+                    </ul>
+    
+                    <div class="d-flex">
+                        <a href="login.html" class="btn btn-light text-primary fw-bold me-2 px-3 shadow-sm">Login</a>
+                        <a href="register.html" class="btn btn-outline-light fw-bold px-3 shadow-sm">Register</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Main Content -->
-    <div class="container mt-4 mb-4">
-        <h2 class="text-center text-primary mb-4">Profile</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="card shadow-sm">
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
                     <div class="card-body text-center">
-                        <img src="default.png" alt="Avatar" class="rounded-circle avatar mb-3" style="width: 120px; height: 120px;">
-                        <h5 class="card-title fw-bold text-primary">John Doe</h5>
-                        <table class="table table-borderless">
-                            <tbody>
-                                <tr>
-                                    <th scope="row" class="fw-bold">Email:</th>
-                                    <td>john.doe@example.com</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold">Gender:</th>
-                                    <td>Male</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold">Date of Birth:</th>
-                                    <td>1990-05-15</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold">Address:</th>
-                                    <td>New York, USA</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold">Work Phone:</th>
-                                    <td>+1234567890</td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="fw-bold">Personal Phone:</th>
-                                    <td>+0987654321</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="mt-3 mb-4">
+                            <i class="fas fa-user-circle" style="font-size: 6rem; color: #0d6efd;"></i>
+                        </div>
+                        <h4 class="mb-1">Alex Johnson</h4>
+                        <div class="d-flex justify-content-center mb-2">
+                            <button type="button" class="btn btn-primary">Edit Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Statistics</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Total Contacts
+                                <span class="badge bg-primary rounded-pill">24</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Family
+                                <span class="badge bg-primary rounded-pill">8</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Work
+                                <span class="badge bg-primary rounded-pill">10</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                Friends
+                                <span class="badge bg-primary rounded-pill">6</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">User Information</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 30%;">Full Name</th>
+                                        <td>Alex Johnson</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Email</th>
+                                        <td>alex.johnson@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Phone</th>
+                                        <td>+1 (555) 123-4567</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Gender</th>
+                                        <td>Male</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Date of Birth</th>
+                                        <td>15.04.1990</td>
+                                    </tr>
+                                    <tr>
+                                        <th>City</th>
+                                        <td>New York, NY</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Registration Date</th>
+                                        <td>10.02.2025</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow mt-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">Recent Activity</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Added a new contact</h6>
+                                    <small class="text-muted">3 hours ago</small>
+                                </div>
+                                <p class="mb-1">Added contact "Emily Davis" to the "Work" category</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Updated contact</h6>
+                                    <small class="text-muted">1 day ago</small>
+                                </div>
+                                <p class="mb-1">Updated phone number for contact "Michael Brown"</p>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1">Deleted contact</h6>
+                                    <small class="text-muted">3 days ago</small>
+                                </div>
+                                <p class="mb-1">Deleted contact "Sarah Wilson" from the "Work" category</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container text-center">
-            <p>&copy; 2025 Personal Phone Directory. All rights reserved.</p>
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 PhoneBook. All rights reserved.</p>
+            <p class="mb-0">A simple and efficient way to manage your contacts</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and Icons -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </body>
 </html>
