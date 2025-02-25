@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Directory</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary" href="index.html">Phone Directory</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add-contact.html">Add Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex ms-auto">
+                    <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container-fluid mt-4 mb-4">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 col-lg-2 bg-light">
+                <h6 class="text-muted">Category</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Family</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Friends</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9 col-lg-10">
+                <div class="d-flex justify-content-center">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Father -->
+                        <div class="col">
+                            <div class="card h-100 d-flex justify-content-center align-items-center" style="max-width: 250px; margin: auto;">
+                                <div class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </button>
+                                </div>
+                                <div class="card-body text-center">
+                                    <img src="default.png" alt="Avatar" class="rounded-circle avatar mb-3" style="width: 80px; height: 80px;">
+                                    <h5 class="card-title fw-bold text-primary">John Doe</h5>
+                                    <p class="card-text fst-italic text-muted fw-bold">Father</p>
+                                    <p class="card-text fw-bold"><small>Category: Family</small></p>
+                                    <p class="card-text fw-bold"><small>Address: New York, USA</small></p>
+                                    <p class="card-text fw-bold"><small>Work Phone: +1234567890</small></p>
+                                    <p class="card-text fw-bold"><small>Personal Phone: +0987654321</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Friend -->
+                        <div class="col">
+                            <div class="card h-100 d-flex justify-content-center align-items-center" style="max-width: 250px; margin: auto;">
+                                <div class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                        <i class="bi bi-trash-fill"></i> 
+                                    </button>
+                                </div>
+                                <div class="card-body text-center">
+                                    <img src="default.png" alt="Avatar" class="rounded-circle avatar mb-3" style="width: 80px; height: 80px;">
+                                    <h5 class="card-title fw-bold text-primary">Mike Smith</h5>
+                                    <p class="card-text fst-italic text-muted fw-bold">Friend</p>
+                                    <p class="card-text fw-bold"><small>Category: Friends</small></p>
+                                    <p class="card-text fw-bold"><small>Address: New York, USA</small></p>
+                                    <p class="card-text fw-bold"><small>Personal Phone: +0987654321</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Colleague -->
+                        <div class="col">
+                            <div class="card h-100 d-flex justify-content-center align-items-center" style="max-width: 250px; margin: auto;">
+                                <div class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-pencil-fill"></i> 
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                        <i class="bi bi-trash-fill"></i> 
+                                    </button>
+                                </div>
+                                <div class="card-body text-center">
+                                    <img src="default.png" alt="Avatar" class="rounded-circle avatar mb-3" style="width: 80px; height: 80px;">
+                                    <h5 class="card-title fw-bold text-primary">Alice Johnson</h5>
+                                    <p class="card-text fst-italic text-muted fw-bold">Colleague</p>
+                                    <p class="card-text fw-bold"><small>Category: Work</small></p>
+                                    <p class="card-text fw-bold"><small>Address: New York, USA</small></p>
+                                    <p class="card-text fw-bold"><small>Work Phone: +1234567890</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Aunt -->
+                        <div class="col">
+                            <div class="card h-100 d-flex justify-content-center align-items-center" style="max-width: 250px; margin: auto;">
+                                <div class="position-absolute top-0 end-0 m-2 d-flex flex-column gap-2">
+                                    <button class="btn btn-sm btn-outline-primary">
+                                        <i class="bi bi-pencil-fill"></i> 
+                                    </button>
+                                    <button class="btn btn-sm btn-outline-danger">
+                                        <i class="bi bi-trash-fill"></i> 
+                                    </button>
+                                </div>
+                                <div class="card-body text-center">
+                                    <img src="default.png" alt="Avatar" class="rounded-circle avatar mb-3" style="width: 80px; height: 80px;">
+                                    <h5 class="card-title fw-bold text-primary">Emily Brown</h5>
+                                    <p class="card-text fst-italic text-muted fw-bold">Aunt</p>
+                                    <p class="card-text fw-bold"><small>Category: Family</small></p>
+                                    <p class="card-text fw-bold"><small>Address: Los Angeles, USA</small></p>
+                                    <p class="card-text fw-bold"><small>Work Phone: +1234567890</small></p>
+                                    <p class="card-text fw-bold"><small>Personal Phone: +0987654321</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- Add Contact Card -->
+                        <div class="col d-flex align-items-center justify-content-center">
+                            <a href="add-contact.html" class="d-flex justify-content-center align-items-center text-decoration-none" style="max-width: 200px; max-height: 200px;">
+                                <div class="add-contact-card d-flex flex-column justify-content-center align-items-center" style="width: 120px; height: 120px;">
+                                    <i class="bi bi-plus-circle-fill text-success" style="font-size: 3rem;"></i>
+                                    <p class="card-text text-success fw-bold mt-2">Add Contact</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <p>&copy; 2025 Personal Phone Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</body>
+</html>

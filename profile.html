@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary" href="index.html">Phone Directory</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="add-contact.html">Add Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-flex ms-auto">
+                    <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4 mb-4">
+        <h2 class="text-center text-primary mb-4">Profile</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="default.png" alt="Avatar" class="rounded-circle avatar mb-3" style="width: 120px; height: 120px;">
+                        <h5 class="card-title fw-bold text-primary">John Doe</h5>
+                        <table class="table table-borderless">
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Email:</th>
+                                    <td>john.doe@example.com</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Gender:</th>
+                                    <td>Male</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Date of Birth:</th>
+                                    <td>1990-05-15</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Address:</th>
+                                    <td>New York, USA</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Work Phone:</th>
+                                    <td>+1234567890</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="fw-bold">Personal Phone:</th>
+                                    <td>+0987654321</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <p>&copy; 2025 Personal Phone Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</body>
+</html>
